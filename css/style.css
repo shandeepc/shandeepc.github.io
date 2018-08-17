@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+html,
+body {
+  background: rgb(22, 22, 22);
+  font-family: 'Inconsolata', sans-serif;
+}
+.wrap {
+ align-content: center;
+  position: fixed;
+	font-size: 50px;
+}
+code {
+  color: white;
+}
+span.blue {
+  color: #48beef;
+}
+span.comment {
+  color: #7f8c8d;
+}
+span.load {
+  color: #f39c12;
+}
