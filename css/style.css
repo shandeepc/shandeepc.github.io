@@ -1,5 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Bree+Serif';
 
+*{ margin:0; padding:0; }/* To ovride chrome useragent css*/
+
+
 html,body {
 	text-align: center;
  	background-color: #fefefe;
@@ -9,7 +12,6 @@ html,body {
 	position: fixed;
 	overflow-x: hidden;
 	text-decoration: none;
-    overflow-y: scroll !important;
 }
 
 @media{
@@ -162,7 +164,7 @@ label .hamburger {
   left: 50px;
   width: 30px;
   height: 2px;
-  background: #fff;//center
+  background: #fff;
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
@@ -178,7 +180,7 @@ label .hamburger:after, label .hamburger:before {
   display: block;
   width: 100%;
   height: 100%;
-  background: #fff;//up and down
+  background: #fff;
 }
 
 label .hamburger:before { top: -10px; }
