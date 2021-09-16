@@ -8,7 +8,6 @@ permalink: /404.html
 		const toBlob = HTMLCanvasElement.prototype.toBlob;
 		const toDataURL = HTMLCanvasElement.prototype.toDataURL;
 		const getImageData = CanvasRenderingContext2D.prototype.getImageData;
-		//
 		var noisify = function (canvas, context) {
 			const shift = {
 				'r': Math.floor(Math.random() * 10) - 5,
@@ -16,7 +15,6 @@ permalink: /404.html
 				'b': Math.floor(Math.random() * 10) - 5,
 				'a': Math.floor(Math.random() * 10) - 5
 			};
-			//
 			const width = canvas.width, height = canvas.height;
 			const imageData = getImageData.apply(context, [0, 0, width, height]);
 			for (let i = 0; i < height; i++) {
@@ -28,32 +26,27 @@ permalink: /404.html
 					imageData.data[n + 3] = imageData.data[n + 3] + shift.a;
 				}
 			}
-			//
 			window.top.postMessage("canvas-fingerprint-defender-alert", '*');
 			context.putImageData(imageData, 0, 0);
 		};
-		//
 		Object.defineProperty(HTMLCanvasElement.prototype, "toBlob", {
 			"value": function () {
 				noisify(this, this.getContext("2d"));
 				return toBlob.apply(this, arguments);
 			}
 		});
-		//
 		Object.defineProperty(HTMLCanvasElement.prototype, "toDataURL", {
 			"value": function () {
 				noisify(this, this.getContext("2d"));
 				return toDataURL.apply(this, arguments);
 			}
 		});
-		//
 		Object.defineProperty(CanvasRenderingContext2D.prototype, "getImageData", {
 			"value": function () {
 				noisify(this.canvas, this);
 				return getImageData.apply(this, arguments);
 			}
 		});
-		//
 		document.documentElement.dataset.cbscriptallow = true;
 	})()</script>
 
@@ -94,8 +87,9 @@ permalink: /404.html
 		}
 
 		h2 {
-			position: absolute;
-			top: 50%;
+			text-align: center;
+			position: relative;
+			top: 42%;
 			left: 50%;
 			margin-top: 150px;
 			font-size: 32px;
@@ -489,7 +483,7 @@ permalink: /404.html
 				</femerge>
 			</filter>
 		</defs>
-	</svg><br>
+	</svg>
 	<h2>You are in the wrong place at the wrong time</h2>
 </body>
 </html>
