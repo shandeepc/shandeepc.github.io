@@ -37,7 +37,8 @@
         <div style="opacity:0" class="layout">
             <div class="sidebar">
                 <div class="sidebar-navbar-tablet">
-                    <a href="about.html" class="sidebar-tablet-brand w-inline-block">
+                    <div style="display: flex; justify-content: space-between; width: 100%;">
+                    <div class="sidebar-tablet-brand w-inline-block">
                         <div class="sidebar-tablet-avatar-wrap">
                             <img src="Images/Me.jpeg" loading="lazy" alt="" class="sidebar-header-avatar"/>
                             <div class="sidebar-header-avatar-outline"></div>
@@ -48,7 +49,18 @@
                                 <div>Senior Technical Consultant</div>
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="sidebar-tablet-avatar-title" style="right: 5px; position: relative;">
+                  <a href="Resume/resume.pdf" download="Shandeep_Srinivas_Resume.pdf">
+                    <button style="padding: 8px 20px; background: #333; border: none; border-radius: 4px; color: white; cursor: pointer; transition: background 0.3s ease; align-items: center; display: flex;">
+                      <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 15C3 17.8284 3 19.2426 3.87868 20.1213C4.75736 21 6.17157 21 9 21H15C17.8284 21 19.2426 21 20.1213 20.1213C21 19.2426 21 17.8284 21 15" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg> &nbsp;Resume
+                    </button>
+                  </a>
+                </div>
+          </div>
                     <a href="#" class="sidebar-tablet-menu w-inline-block">
                         <div class="menu-burger w-embed">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -65,7 +77,8 @@
                 <div class="sidebar-bg-tablet"></div>
                 <div class="sidebar-content">
                     <div class="sidebar-header">
-                        <a href="about.html" class="sidebar-header-wrap w-inline-block">
+                        <div class="sidebar-header-wrap w-inline-block">
+            <!-- <a href="about.html" class="sidebar-header-wrap w-inline-block"> -->
                             <div class="sidebar-header-avatar-wrap">
                                 <img src="Images/Me.jpeg" loading="lazy" alt="" class="sidebar-header-avatar"/>
                                 <div class="sidebar-header-avatar-outline"></div>
@@ -75,8 +88,19 @@
                                 <div class="sidebar-header-title">
                                     <div>Senior Technical Consultant</div>
                                 </div>
+                                <div class="sidebar-header-title"><br>
+                                  <a href="Resume/resume.pdf" download="Shandeep_Srinivas_Resume.pdf">
+                                    <button style="padding: 8px 20px; background: #333; border: none; border-radius: 4px; color: white; cursor: pointer; transition: background 0.3s ease; align-items: center; display: flex;">
+                                      <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 15C3 17.8284 3 19.2426 3.87868 20.1213C4.75736 21 6.17157 21 9 21H15C17.8284 21 19.2426 21 20.1213 20.1213C21 19.2426 21 17.8284 21 15" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg> &nbsp;Download Resume
+                                    </button>
+                                  </a>
+                                </div>
                             </div>
-                        </a>
+                        </div>
+            <!-- </a> -->
                     </div>
                     <div class="sidebar-navbar">
                         <div data-w-id="518c9fbd-4e8b-12c2-9082-bfd8f6842684" class="navbar-list">
@@ -214,6 +238,41 @@
                             <div class="content-title is-text">Plugins, Utilities and other helpful things</div>
                         </div>
                         <div class="w-layout-grid _2x-column">
+                            <a href="https://developer.sailpoint.com/discuss/t/events-plugin-dashboard/156011" target="_blank" class="card w-inline-block">
+                                <div class="shine-wrap">
+                                    <div class="shine"></div>
+                                </div>
+                                <div class="card-content-vertical">
+                                    <div class="tools">
+                                        <div class="tools-head">
+                                            <div class="tools-icon">
+                                                <img src="Images/SailPoint/SailPoint-Logo-RGB-Color.png" loading="lazy" alt="" class="image-background"/>
+                                                <div class="app-outline"></div>
+                                            </div>
+                                            
+                                            <div>
+                                                <h2 class="card-heading">IIQ Events Dashboard Plugin</h2>
+                                            </div>
+                                        </div>
+                                        <img class="roundedImages" src="Images/SailPoint/EventsDashboardPlugin.jpeg"/>
+                                        <div class="card-text-3-lines">Realtime dashboard to visualize IIQ events, monitor and gather analytics.</div>
+                                    </div>
+                                    <div class="card-meta">
+                                        <div class="card-info">
+                                            <div class="card-tag" onclick="window.open('https://github.com/sailpoint-oss/colab-events-dashboard-plugin', '_blank').focus();" >GitHub</div>
+                                            <div class="card-tag" onclick="window.open('https://developer.sailpoint.com/discuss/t/events-plugin-dashboard/156011', '_blank').focus();">SailPoint Developer Community</div>
+                                            <div class="card-tag" onclick="window.open('https://github.com/sailpoint-oss/colab-events-dashboard-plugin/releases/tag/v1.0', '_blank').focus();">Download Latest Release</div>
+                                        </div>
+                                        <div class="card-cta">
+                                            <div class="icon-svg w-embed">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                             <a href="https://developer.sailpoint.com/discuss/t/identityiq-announcement-plugin/23975" target="_blank" class="card w-inline-block">
                                 <div class="shine-wrap">
                                     <div class="shine"></div>
@@ -298,7 +357,7 @@
                                             </div>
                                             
                                             <div>
-                                                <h2 class="card-heading">Custom Loading Spinner Plugin</h2>
+                                                <h2 class="card-heading">Identity Details Tweaks Plugin</h2>
                                             </div>
                                         </div>
                                         <img class="roundedImages" src="Images/SailPoint/IdentityDetailsTweaksPlugin.jpeg"/>
@@ -346,7 +405,7 @@
                                                 <h2 class="card-heading">Lysandra</h2>
                                             </div>
                                         </div>
-                                        <img class="roundedImages" src="Images/SailPoint/IdentityDetailsTweaksPlugin.jpeg"/>
+                                        <img class="roundedImages" src="Images/Web/Lysandra.jpg"/>
                                         <div class="card-text-2-lines">A simple REST API serves as a Source/Target for IDAM Tools. But can be used for other things....</div>
                                     </div>
                                     <div class="card-meta">

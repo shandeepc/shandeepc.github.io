@@ -2,9 +2,16 @@
 
 #pdfResume {
     width: 100%;
-    height: auto;
-    aspect-ratio: 2 / 5.12;
-    overflow: hidden;
+    height: 100%;
+    /* aspect-ratio: 2 / 5.12; */
+    /* aspect-ratio: 3 / 1.58; */
+    /* overflow: hidden; */
+}
+
+@media screen and (max-width: 991px) {
+    #pdfResume {
+        aspect-ratio: 2 / 5.12;
+    }
 }
 
 #pdfResume iframe {
@@ -2159,7 +2166,9 @@ blockquote {
 }
 .main {
   flex: 1;
-  margin-top: -70px;
+  /* margin-top: -70px; */
+  display: flex;
+  flex-direction: column;
 }
 /* .footer {
   margin-top: 120px;
@@ -2167,6 +2176,11 @@ blockquote {
   display: block;
   position: relative;
   overflow: hidden;
+} */
+
+/* .footer {
+    position: fixed;
+    bottom: 0;
 } */
 ._4x-column {
   grid-column-gap: 8px;
@@ -2454,7 +2468,7 @@ blockquote {
 }
 .footer-meta {
   border-top: 1px solid var(--border);
-  margin-top: 13.65rem;
+  /* margin-top: 13.65rem; */
   padding: 1.25rem;
 }
 .thumb-3x-column {
@@ -2725,6 +2739,7 @@ blockquote {
   margin-right: auto;
   padding-left: 24px;
   padding-right: 24px;
+  flex: 1;
 }
 .post-body {
   width: 100%;
