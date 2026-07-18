@@ -389,6 +389,44 @@
                             <div class="content-title is-text">Hobby projects</div>
                         </div>
                         <div class="w-layout-grid _2x-column">
+                            <a href="https://momentum.shandeep.dev" target="_blank" class="card w-inline-block">
+                                <div class="shine-wrap">
+                                    <div class="shine"></div>
+                                </div>
+                                <div class="card-content-vertical">
+                                    <div class="tools">
+                                        <div class="tools-head">
+                                            <div class="tools-icon">
+                                                <img src="Images/Web/Momentum.ico" loading="lazy" alt="" class="image-background"/>
+                                                <div class="app-outline"></div>
+                                            </div>
+                                            
+                                            <div>
+                                                <h2 class="card-heading">Momentum</h2>
+                                            </div>
+                                        </div>
+                                        <div class="slideshow-container">
+                                        <img class="roundedImages active" src="Images/Web/Momentum.png"/>
+                                        <img class="roundedImages" src="Images/Web/Momentum_Add_Task.png"/>
+                                        <img class="roundedImages" src="Images/Web/Momentum_Insights.png"/>
+                                        <img class="roundedImages" src="Images/Web/Momentum_Github_Sync.png"/>
+                                        </div>
+                                        <div class="card-text-2-lines">A modern, responsive, offline-first Kanban-style To-Do application with local data persistence.</div>
+                                    </div>
+                                    <div class="card-meta">
+                                        <div class="card-info">
+                                            <div class="card-tag" onclick="window.open('https://momentum.shandeep.dev', '_blank').focus();" >Try now</div>
+                                        </div>
+                                        <div class="card-cta">
+                                            <div class="icon-svg w-embed">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                             <a href="https://github.com/shandeepc/Lysandra" target="_blank" class="card w-inline-block">
                                 <div class="shine-wrap">
                                     <div class="shine"></div>
@@ -632,6 +670,25 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+     <script>
+        const images = document.querySelectorAll('.slideshow-container img');
+        let currentIndex = 0;
+        const displayTime = 3000; // Time each image stays fully visible (3 seconds)
+
+        function nextImage() {
+            // Remove the active class from the current image to fade it out
+            images[currentIndex].classList.remove('active');
+            
+            // Advance to the next image index, looping back to 0 at the end
+            currentIndex = (currentIndex + 1) % images.length;
+            
+            // Add the active class to the next image to fade it in
+            images[currentIndex].classList.add('active');
+        }
+
+        // Run the nextImage function repeatedly
+        setInterval(nextImage, displayTime);
+    </script>
         <script src="Scripts/script.js" type="text/javascript"></script>
         
     </body>
